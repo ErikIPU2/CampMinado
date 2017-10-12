@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/mina.css" media="screen,projection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campo Minado</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper indigo darken-4">
+        <a href="#" class="brand-logo truncate">Campo Minado</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <br>
+
+      <div class = "row">
+        <div class="col s7">
+         <div class="input-field">
+          <i class="material-icons prefix tabb">tab</i>
+          <input type="number" id="tabb" class="validate tabb" min="1">
+          <label class="tabb" for="tabb">Digite o tamanho do tabuleiro</label>
+        </div>
+      </div>
+
+      <div class="col s5">
+        <div class="input-field tabb">
+          <i class="material-icons prefix tabb">insert_chart</i>
+          <select>
+            <option value="" disabled selected>ESCOLHA A DIFULDADE CLICKANDO AQUI!</option>
+            <option value="10">Noob/K-poper</option>
+            <option value="20">Normalzin/Modinha</option>
+            <option value="50">Hardicori/Se acha</option>
+            <option value="90">SE É O BIXO MERMÃO</option>
+            <option value="666">Personalizar valor/Chato com as opções</option>
+            <option value="999">NÃO USE, DÁ BUG!!!!!!!!!!!!!!</option>
+          </select>
+          <label>Escolha o nivel de dificuldade</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s5 offset-s7">
+        <div class="input-field menu-chato">
+          <i class="material-icons prefix tabb">brightness_5</i>
+          <input type="number" id="chato" class="validate tabb" min="1">
+          <label class="tabb" for="chato">Digite aqui a porcentagem de bombas</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-align" id="butun">
+        <button class="btn indigo darken-2" id="gerar">Gerar Tab</button>
+    </div>
+    <div class="center-align" id="contbu">
+      <button class="btn indigo darken-2" id="kuntinue">Continuar</button>
+      <br>
+    </div>
+
+  </div>
+  <div onselectstart="return false" id="tabmos" class="center-align blue-grey">
+    <!--Tabuleiro -->
+  </div>
+  <br><br>
+  <div class="center-align" id="aff">
+    <button class="btn indigo darken-2" id="gerar">Deixe o seu Feedback ^^</button>
+  </div>
+
+  <div id="fedi" class="container">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Digite a sua opinião</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="nome" type="text" class="validate">
+            <label for="nome">Nome</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <button class="btn indigo darken-2" id="sendfedi">Enviar Fedibaki</button>
+  </div>
+</main>
+
+<footer class="page-footer indigo darken-4">
+  <div class="footer-copyright">
+    <div class="container">2017 Erik Borella</div>
+  </div>
+</footer>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/mina.js"></script>
+<script type="text/javascript" src="js/FileSaver.js"></script>
+</body>
+
+</html>

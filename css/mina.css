@@ -1,0 +1,18 @@
+.fechada {
+	color: #00E676;
+}
+
+.tabuleiro {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	margin:5px;
+	border-radius: 2px;
+
+}
+
+.marq {
+	color: #dd2c00;
+}
